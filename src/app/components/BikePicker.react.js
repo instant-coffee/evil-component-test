@@ -8,26 +8,41 @@ export default class App extends React.Component {
     const buildKit = ['FRAME ONLY', 'ST', 'XT-01']
 
     return (
-      <div>
-        <nav className="menu size">
-          <span className="menu-heading">SIZE</span>
-          <a className="menu-item">OP1</a>
-          <a className="menu-item">OP2</a>
-          <a className="menu-item">OP3</a>
-        </nav>
-        <nav className="menu color">
-          <span className="menu-heading">COLOR</span>
-          <a className="menu-item">OP1</a>
-          <a className="menu-item">OP2</a>
-          <a className="menu-item">OP3</a>  
-        </nav>  
-        <nav className="menu build-kit">
-          <span className="menu-heading">BUILD</span>
-          <a className="menu-item">OP1</a>
-          <a className="menu-item">OP2</a>
-          <a className="menu-item">OP3</a>  
-        </nav>
-      </div>  
+      <form>
+        <dl className="form-group">
+          <dt><label>SIZE</label></dt>
+          <dd>
+          <select className="form-select">
+            <option>SMALL</option>
+            <option>OP2</option>
+            <option>OP3</option>
+          </select>
+          </dd>
+        </dl>
+        <dl className="form-group">
+          <dt><label>COLOR</label></dt>
+          <dd>
+          <select className="form-select">
+            <option>BLACK</option>
+            <option>OP2</option>
+            <option>OP3</option>
+          </select>
+          </dd>
+        </dl>
+
+      
+        <dl className="form-group">
+          <dt><label>BUILD KIT</label></dt>
+          <dd>
+          <select className="form-select">
+            <option>FRAME ONLY</option>
+            <option>OP2</option>
+            <option>OP3</option>
+          </select>
+          </dd>
+        </dl>
+
+      </form>  
     );
   }
 }
